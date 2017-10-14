@@ -1,0 +1,382 @@
+DEBUG http-bio-8080-exec-5 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapping [/js/bootstrap-3.3.7-dist/css/bootstrap.min.css] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[ServletContext resource [/js/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@65c356d8]]] and 1 interceptor
+DEBUG http-bio-8080-exec-13 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/cd/js/jquery-3.2.1.min.js] is: -1
+DEBUG http-bio-8080-exec-10 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'springMVCServlet' processing GET request for [/cd/js/bootstrap-3.3.7-dist/js/bootstrap.min.js]
+DEBUG http-bio-8080-exec-7 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'springMVCServlet' processing GET request for [/cd/css/signin.css]
+DEBUG http-bio-8080-exec-10 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Looking up handler method for path /js/bootstrap-3.3.7-dist/js/bootstrap.min.js
+DEBUG http-bio-8080-exec-7 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Looking up handler method for path /css/signin.css
+DEBUG http-bio-8080-exec-5 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/cd/js/bootstrap-3.3.7-dist/css/bootstrap.min.css] is: -1
+DEBUG http-bio-8080-exec-7 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Did not find handler method for [/css/signin.css]
+DEBUG http-bio-8080-exec-7 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Matching patterns for request [/css/signin.css] are [/css/**]
+DEBUG http-bio-8080-exec-10 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Did not find handler method for [/js/bootstrap-3.3.7-dist/js/bootstrap.min.js]
+DEBUG http-bio-8080-exec-7 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - URI Template variables for request [/css/signin.css] are {}
+DEBUG http-bio-8080-exec-7 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapping [/css/signin.css] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[ServletContext resource [/css/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@4ab5192]]] and 1 interceptor
+DEBUG http-bio-8080-exec-10 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Matching patterns for request [/js/bootstrap-3.3.7-dist/js/bootstrap.min.js] are [/js/**]
+DEBUG http-bio-8080-exec-7 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/cd/css/signin.css] is: -1
+DEBUG http-bio-8080-exec-10 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - URI Template variables for request [/js/bootstrap-3.3.7-dist/js/bootstrap.min.js] are {}
+DEBUG http-bio-8080-exec-10 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapping [/js/bootstrap-3.3.7-dist/js/bootstrap.min.js] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[ServletContext resource [/js/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@65c356d8]]] and 1 interceptor
+DEBUG http-bio-8080-exec-10 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/cd/js/bootstrap-3.3.7-dist/js/bootstrap.min.js] is: -1
+DEBUG http-bio-8080-exec-7 org.springframework.web.servlet.DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'springMVCServlet': assuming HandlerAdapter completed request handling
+DEBUG http-bio-8080-exec-7 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+DEBUG http-bio-8080-exec-10 org.springframework.web.servlet.DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'springMVCServlet': assuming HandlerAdapter completed request handling
+DEBUG http-bio-8080-exec-10 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+DEBUG http-bio-8080-exec-13 org.springframework.web.servlet.DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'springMVCServlet': assuming HandlerAdapter completed request handling
+DEBUG http-bio-8080-exec-13 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+DEBUG http-bio-8080-exec-5 org.springframework.web.servlet.DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'springMVCServlet': assuming HandlerAdapter completed request handling
+DEBUG http-bio-8080-exec-5 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+DEBUG http-bio-8080-exec-7 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'springMVCServlet' processing GET request for [/cd/openDirectory]
+DEBUG http-bio-8080-exec-7 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Looking up handler method for path /openDirectory
+DEBUG http-bio-8080-exec-7 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Returning handler method [public java.lang.String com.zhiyou.clouddisk.controller.FileIndexController.openDirectory(java.lang.String,com.zhiyou.clouddisk.model.AppUser,org.springframework.ui.Model)]
+DEBUG http-bio-8080-exec-7 org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'fileIndexController'
+DEBUG http-bio-8080-exec-7 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/cd/openDirectory] is: -1
+DEBUG http-bio-8080-exec-7 org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+DEBUG http-bio-8080-exec-7 org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@b34e659]
+DEBUG http-bio-8080-exec-7 org.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+DEBUG http-bio-8080-exec-7 org.springframework.jdbc.datasource.DataSourceUtils - Registering transaction synchronization for JDBC Connection
+DEBUG http-bio-8080-exec-7 org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [jdbc:mysql://192.168.99.100:3306/clouddisk, UserName=root@192.168.99.1, MySQL Connector Java] will be managed by Spring
+DEBUG http-bio-8080-exec-7 com.zhiyou.clouddisk.dao.FileIndexDao.getRootDirByUserId - ==>  Preparing: select * from file_index where user_id=? AND path='/' 
+DEBUG http-bio-8080-exec-7 com.zhiyou.clouddisk.dao.FileIndexDao.getRootDirByUserId - ==> Parameters: 139(Long)
+DEBUG http-bio-8080-exec-7 com.zhiyou.clouddisk.dao.FileIndexDao.getRootDirByUserId - <==      Total: 1
+DEBUG http-bio-8080-exec-7 org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@b34e659]
+DEBUG http-bio-8080-exec-7 org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@b34e659]
+DEBUG http-bio-8080-exec-7 org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@b34e659]
+DEBUG http-bio-8080-exec-7 org.springframework.jdbc.datasource.DataSourceUtils - Returning JDBC Connection to DataSource
+DEBUG http-bio-8080-exec-7 org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+DEBUG http-bio-8080-exec-7 org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7af6f7c9]
+DEBUG http-bio-8080-exec-7 org.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+DEBUG http-bio-8080-exec-7 org.springframework.jdbc.datasource.DataSourceUtils - Registering transaction synchronization for JDBC Connection
+DEBUG http-bio-8080-exec-7 org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [jdbc:mysql://192.168.99.100:3306/clouddisk, UserName=root@192.168.99.1, MySQL Connector Java] will be managed by Spring
+DEBUG http-bio-8080-exec-7 com.zhiyou.clouddisk.dao.FileIndexDao.getChildrenFileById - ==>  Preparing: select * from file_index where parent_id=? and delete_flag is null 
+DEBUG http-bio-8080-exec-7 com.zhiyou.clouddisk.dao.FileIndexDao.getChildrenFileById - ==> Parameters: 1(Long)
+DEBUG http-bio-8080-exec-7 com.zhiyou.clouddisk.dao.FileIndexDao.getChildrenFileById - <==      Total: 3
+DEBUG http-bio-8080-exec-7 org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7af6f7c9]
+DEBUG http-bio-8080-exec-7 org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7af6f7c9]
+DEBUG http-bio-8080-exec-7 org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7af6f7c9]
+DEBUG http-bio-8080-exec-7 org.springframework.jdbc.datasource.DataSourceUtils - Returning JDBC Connection to DataSource
+DEBUG http-bio-8080-exec-7 org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+DEBUG http-bio-8080-exec-7 org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@aaae382]
+DEBUG http-bio-8080-exec-7 org.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+DEBUG http-bio-8080-exec-7 org.springframework.jdbc.datasource.DataSourceUtils - Registering transaction synchronization for JDBC Connection
+DEBUG http-bio-8080-exec-7 org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [jdbc:mysql://192.168.99.100:3306/clouddisk, UserName=root@192.168.99.1, MySQL Connector Java] will be managed by Spring
+DEBUG http-bio-8080-exec-7 com.zhiyou.clouddisk.dao.FileIndexDao.getRootFilesByUserId_COUNT - ==>  Preparing: SELECT count(0) FROM file_index a INNER JOIN file_index b ON a.parent_id = b.file_index_id WHERE b.user_id = ? AND b.path = '/' 
+DEBUG http-bio-8080-exec-7 com.zhiyou.clouddisk.dao.FileIndexDao.getRootFilesByUserId_COUNT - ==> Parameters: 139(Long)
+DEBUG http-bio-8080-exec-7 com.zhiyou.clouddisk.dao.FileIndexDao.getRootFilesByUserId_COUNT - <==      Total: 1
+DEBUG http-bio-8080-exec-7 com.zhiyou.clouddisk.dao.FileIndexDao.getRootFilesByUserId - ==>  Preparing: SELECT a.* FROM file_index a INNER JOIN file_index b ON a.parent_id=b.file_index_id WHERE b.user_id=? AND b.path='/' LIMIT 3,3 
+DEBUG http-bio-8080-exec-7 com.zhiyou.clouddisk.dao.FileIndexDao.getRootFilesByUserId - ==> Parameters: 139(Long)
+DEBUG http-bio-8080-exec-7 com.zhiyou.clouddisk.dao.FileIndexDao.getRootFilesByUserId - <==      Total: 3
+DEBUG http-bio-8080-exec-7 org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@aaae382]
+DEBUG http-bio-8080-exec-7 org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@aaae382]
+DEBUG http-bio-8080-exec-7 org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@aaae382]
+DEBUG http-bio-8080-exec-7 org.springframework.jdbc.datasource.DataSourceUtils - Returning JDBC Connection to DataSource
+DEBUG http-bio-8080-exec-7 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.InternalResourceView: name 'index'; URL [/WEB-INF/pages/index.jsp]] in DispatcherServlet with name 'springMVCServlet'
+DEBUG http-bio-8080-exec-7 org.springframework.web.servlet.view.InternalResourceView - Added model object 'rootDir' of type [com.zhiyou.clouddisk.model.FileIndex] to request in view with name 'index'
+DEBUG http-bio-8080-exec-7 org.springframework.web.servlet.view.InternalResourceView - Added model object 'rootFiles' of type [java.util.ArrayList] to request in view with name 'index'
+DEBUG http-bio-8080-exec-7 org.springframework.web.servlet.view.InternalResourceView - Added model object 'org.springframework.validation.BindingResult.rootDir' of type [org.springframework.validation.BeanPropertyBindingResult] to request in view with name 'index'
+DEBUG http-bio-8080-exec-7 org.springframework.web.servlet.view.InternalResourceView - Forwarding to resource [/WEB-INF/pages/index.jsp] in InternalResourceView 'index'
+DEBUG http-bio-8080-exec-7 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+DEBUG http-bio-8080-exec-10 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'springMVCServlet' processing POST request for [/cd/login]
+DEBUG http-bio-8080-exec-10 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Looking up handler method for path /login
+DEBUG http-bio-8080-exec-10 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Returning handler method [public java.lang.String com.zhiyou.clouddisk.controller.AppUserController.login(com.zhiyou.clouddisk.model.AppUser,org.springframework.ui.Model)]
+DEBUG http-bio-8080-exec-10 org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'appUserController'
+DEBUG http-bio-8080-exec-10 org.springframework.web.cors.DefaultCorsProcessor - Skip CORS processing: request is from same origin
+DEBUG http-bio-8080-exec-10 org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+DEBUG http-bio-8080-exec-10 org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2431e752]
+DEBUG http-bio-8080-exec-10 org.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+DEBUG http-bio-8080-exec-10 org.springframework.jdbc.datasource.DataSourceUtils - Registering transaction synchronization for JDBC Connection
+DEBUG http-bio-8080-exec-10 org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [jdbc:mysql://192.168.99.100:3306/clouddisk, UserName=root@192.168.99.1, MySQL Connector Java] will be managed by Spring
+DEBUG http-bio-8080-exec-10 com.zhiyou.clouddisk.dao.AppUserDao.getAppUserByAccountNo - ==>  Preparing: select user_id ,user_name ,gender ,birthday ,account_no ,password ,email ,phone_no from app_user where account_no=? 
+DEBUG http-bio-8080-exec-10 com.zhiyou.clouddisk.dao.AppUserDao.getAppUserByAccountNo - ==> Parameters: test01(String)
+DEBUG http-bio-8080-exec-10 com.zhiyou.clouddisk.dao.AppUserDao.getAppUserByAccountNo - <==      Total: 0
+DEBUG http-bio-8080-exec-10 org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2431e752]
+DEBUG http-bio-8080-exec-10 org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2431e752]
+DEBUG http-bio-8080-exec-10 org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2431e752]
+DEBUG http-bio-8080-exec-10 org.springframework.jdbc.datasource.DataSourceUtils - Returning JDBC Connection to DataSource
+DEBUG http-bio-8080-exec-10 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.RedirectView: name 'redirect:login.jsp'; URL [login.jsp]] in DispatcherServlet with name 'springMVCServlet'
+DEBUG http-bio-8080-exec-10 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+DEBUG http-bio-8080-exec-4 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'springMVCServlet' processing GET request for [/cd/stasticFiles]
+DEBUG http-bio-8080-exec-4 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Looking up handler method for path /stasticFiles
+DEBUG http-bio-8080-exec-4 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Returning handler method [public java.lang.String com.zhiyou.clouddisk.controller.FileIndexController.stasticFiles(com.zhiyou.clouddisk.model.AppUser,org.springframework.ui.Model)]
+DEBUG http-bio-8080-exec-4 org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'fileIndexController'
+DEBUG http-bio-8080-exec-4 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/cd/stasticFiles] is: -1
+DEBUG http-bio-8080-exec-4 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+DEBUG http-bio-8080-exec-10 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'springMVCServlet' processing POST request for [/cd/login]
+DEBUG http-bio-8080-exec-10 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Looking up handler method for path /login
+DEBUG http-bio-8080-exec-10 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Returning handler method [public java.lang.String com.zhiyou.clouddisk.controller.AppUserController.login(com.zhiyou.clouddisk.model.AppUser,org.springframework.ui.Model)]
+DEBUG http-bio-8080-exec-10 org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'appUserController'
+DEBUG http-bio-8080-exec-10 org.springframework.web.cors.DefaultCorsProcessor - Skip CORS processing: request is from same origin
+DEBUG http-bio-8080-exec-10 org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+DEBUG http-bio-8080-exec-10 org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@75b05c62]
+DEBUG http-bio-8080-exec-10 org.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+DEBUG http-bio-8080-exec-10 org.springframework.jdbc.datasource.DataSourceUtils - Registering transaction synchronization for JDBC Connection
+DEBUG http-bio-8080-exec-10 org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [jdbc:mysql://192.168.99.100:3306/clouddisk, UserName=root@192.168.99.1, MySQL Connector Java] will be managed by Spring
+DEBUG http-bio-8080-exec-10 com.zhiyou.clouddisk.dao.AppUserDao.getAppUserByAccountNo - ==>  Preparing: select user_id ,user_name ,gender ,birthday ,account_no ,password ,email ,phone_no from app_user where account_no=? 
+DEBUG http-bio-8080-exec-10 com.zhiyou.clouddisk.dao.AppUserDao.getAppUserByAccountNo - ==> Parameters: test01(String)
+DEBUG http-bio-8080-exec-10 com.zhiyou.clouddisk.dao.AppUserDao.getAppUserByAccountNo - <==      Total: 0
+DEBUG http-bio-8080-exec-10 org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@75b05c62]
+DEBUG http-bio-8080-exec-10 org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@75b05c62]
+DEBUG http-bio-8080-exec-10 org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@75b05c62]
+DEBUG http-bio-8080-exec-10 org.springframework.jdbc.datasource.DataSourceUtils - Returning JDBC Connection to DataSource
+DEBUG http-bio-8080-exec-10 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.RedirectView: name 'redirect:login.jsp'; URL [login.jsp]] in DispatcherServlet with name 'springMVCServlet'
+DEBUG http-bio-8080-exec-10 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+DEBUG http-bio-8080-exec-10 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'springMVCServlet' processing POST request for [/cd/login]
+DEBUG http-bio-8080-exec-10 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Looking up handler method for path /login
+DEBUG http-bio-8080-exec-10 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Returning handler method [public java.lang.String com.zhiyou.clouddisk.controller.AppUserController.login(com.zhiyou.clouddisk.model.AppUser,org.springframework.ui.Model)]
+DEBUG http-bio-8080-exec-10 org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'appUserController'
+DEBUG http-bio-8080-exec-10 org.springframework.web.cors.DefaultCorsProcessor - Skip CORS processing: request is from same origin
+DEBUG http-bio-8080-exec-10 org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+DEBUG http-bio-8080-exec-10 org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@70dc7d93]
+DEBUG http-bio-8080-exec-10 org.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+DEBUG http-bio-8080-exec-10 org.springframework.jdbc.datasource.DataSourceUtils - Registering transaction synchronization for JDBC Connection
+DEBUG http-bio-8080-exec-10 org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [jdbc:mysql://192.168.99.100:3306/clouddisk, UserName=root@192.168.99.1, MySQL Connector Java] will be managed by Spring
+DEBUG http-bio-8080-exec-10 com.zhiyou.clouddisk.dao.AppUserDao.getAppUserByAccountNo - ==>  Preparing: select user_id ,user_name ,gender ,birthday ,account_no ,password ,email ,phone_no from app_user where account_no=? 
+DEBUG http-bio-8080-exec-10 com.zhiyou.clouddisk.dao.AppUserDao.getAppUserByAccountNo - ==> Parameters: test01(String)
+DEBUG http-bio-8080-exec-10 com.zhiyou.clouddisk.dao.AppUserDao.getAppUserByAccountNo - <==      Total: 0
+DEBUG http-bio-8080-exec-10 org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@70dc7d93]
+DEBUG http-bio-8080-exec-10 org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@70dc7d93]
+DEBUG http-bio-8080-exec-10 org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@70dc7d93]
+DEBUG http-bio-8080-exec-10 org.springframework.jdbc.datasource.DataSourceUtils - Returning JDBC Connection to DataSource
+DEBUG http-bio-8080-exec-10 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.RedirectView: name 'redirect:login.jsp'; URL [login.jsp]] in DispatcherServlet with name 'springMVCServlet'
+DEBUG http-bio-8080-exec-10 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+DEBUG http-bio-8080-exec-10 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'springMVCServlet' processing POST request for [/cd/login]
+DEBUG http-bio-8080-exec-10 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Looking up handler method for path /login
+DEBUG http-bio-8080-exec-10 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Returning handler method [public java.lang.String com.zhiyou.clouddisk.controller.AppUserController.login(com.zhiyou.clouddisk.model.AppUser,org.springframework.ui.Model)]
+DEBUG http-bio-8080-exec-10 org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'appUserController'
+DEBUG http-bio-8080-exec-10 org.springframework.web.cors.DefaultCorsProcessor - Skip CORS processing: request is from same origin
+DEBUG http-bio-8080-exec-10 org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+DEBUG http-bio-8080-exec-10 org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2699f6d9]
+DEBUG http-bio-8080-exec-10 org.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+DEBUG http-bio-8080-exec-10 org.springframework.jdbc.datasource.DataSourceUtils - Registering transaction synchronization for JDBC Connection
+DEBUG http-bio-8080-exec-10 org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [jdbc:mysql://192.168.99.100:3306/clouddisk, UserName=root@192.168.99.1, MySQL Connector Java] will be managed by Spring
+DEBUG http-bio-8080-exec-10 com.zhiyou.clouddisk.dao.AppUserDao.getAppUserByAccountNo - ==>  Preparing: select user_id ,user_name ,gender ,birthday ,account_no ,password ,email ,phone_no from app_user where account_no=? 
+DEBUG http-bio-8080-exec-10 com.zhiyou.clouddisk.dao.AppUserDao.getAppUserByAccountNo - ==> Parameters: test01(String)
+DEBUG http-bio-8080-exec-10 com.zhiyou.clouddisk.dao.AppUserDao.getAppUserByAccountNo - <==      Total: 0
+DEBUG http-bio-8080-exec-10 org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2699f6d9]
+DEBUG http-bio-8080-exec-10 org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2699f6d9]
+DEBUG http-bio-8080-exec-10 org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2699f6d9]
+DEBUG http-bio-8080-exec-10 org.springframework.jdbc.datasource.DataSourceUtils - Returning JDBC Connection to DataSource
+DEBUG http-bio-8080-exec-10 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.RedirectView: name 'redirect:login.jsp'; URL [login.jsp]] in DispatcherServlet with name 'springMVCServlet'
+DEBUG http-bio-8080-exec-10 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+DEBUG http-bio-8080-exec-4 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'springMVCServlet' processing POST request for [/cd/login]
+DEBUG http-bio-8080-exec-4 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Looking up handler method for path /login
+DEBUG http-bio-8080-exec-4 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Returning handler method [public java.lang.String com.zhiyou.clouddisk.controller.AppUserController.login(com.zhiyou.clouddisk.model.AppUser,org.springframework.ui.Model)]
+DEBUG http-bio-8080-exec-4 org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'appUserController'
+DEBUG http-bio-8080-exec-4 org.springframework.web.cors.DefaultCorsProcessor - Skip CORS processing: request is from same origin
+DEBUG http-bio-8080-exec-4 org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+DEBUG http-bio-8080-exec-4 org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3e4c3a4e]
+DEBUG http-bio-8080-exec-4 org.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+DEBUG http-bio-8080-exec-4 org.springframework.jdbc.datasource.DataSourceUtils - Registering transaction synchronization for JDBC Connection
+DEBUG http-bio-8080-exec-4 org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [jdbc:mysql://192.168.99.100:3306/clouddisk, UserName=root@192.168.99.1, MySQL Connector Java] will be managed by Spring
+DEBUG http-bio-8080-exec-4 com.zhiyou.clouddisk.dao.AppUserDao.getAppUserByAccountNo - ==>  Preparing: select user_id ,user_name ,gender ,birthday ,account_no ,password ,email ,phone_no from app_user where account_no=? 
+DEBUG http-bio-8080-exec-4 com.zhiyou.clouddisk.dao.AppUserDao.getAppUserByAccountNo - ==> Parameters: 001(String)
+DEBUG http-bio-8080-exec-4 com.zhiyou.clouddisk.dao.AppUserDao.getAppUserByAccountNo - <==      Total: 0
+DEBUG http-bio-8080-exec-4 org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3e4c3a4e]
+DEBUG http-bio-8080-exec-4 org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3e4c3a4e]
+DEBUG http-bio-8080-exec-4 org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3e4c3a4e]
+DEBUG http-bio-8080-exec-4 org.springframework.jdbc.datasource.DataSourceUtils - Returning JDBC Connection to DataSource
+DEBUG http-bio-8080-exec-4 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.RedirectView: name 'redirect:login.jsp'; URL [login.jsp]] in DispatcherServlet with name 'springMVCServlet'
+DEBUG http-bio-8080-exec-4 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+DEBUG http-bio-8080-exec-4 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'springMVCServlet' processing POST request for [/cd/login]
+DEBUG http-bio-8080-exec-4 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Looking up handler method for path /login
+DEBUG http-bio-8080-exec-4 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Returning handler method [public java.lang.String com.zhiyou.clouddisk.controller.AppUserController.login(com.zhiyou.clouddisk.model.AppUser,org.springframework.ui.Model)]
+DEBUG http-bio-8080-exec-4 org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'appUserController'
+DEBUG http-bio-8080-exec-4 org.springframework.web.cors.DefaultCorsProcessor - Skip CORS processing: request is from same origin
+DEBUG http-bio-8080-exec-4 org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+DEBUG http-bio-8080-exec-4 org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@da879c9]
+DEBUG http-bio-8080-exec-4 org.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+DEBUG http-bio-8080-exec-4 org.springframework.jdbc.datasource.DataSourceUtils - Registering transaction synchronization for JDBC Connection
+DEBUG http-bio-8080-exec-4 org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [jdbc:mysql://192.168.99.100:3306/clouddisk, UserName=root@192.168.99.1, MySQL Connector Java] will be managed by Spring
+DEBUG http-bio-8080-exec-4 com.zhiyou.clouddisk.dao.AppUserDao.getAppUserByAccountNo - ==>  Preparing: select user_id ,user_name ,gender ,birthday ,account_no ,password ,email ,phone_no from app_user where account_no=? 
+DEBUG http-bio-8080-exec-4 com.zhiyou.clouddisk.dao.AppUserDao.getAppUserByAccountNo - ==> Parameters: root(String)
+DEBUG http-bio-8080-exec-4 com.zhiyou.clouddisk.dao.AppUserDao.getAppUserByAccountNo - <==      Total: 0
+DEBUG http-bio-8080-exec-4 org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@da879c9]
+DEBUG http-bio-8080-exec-4 org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@da879c9]
+DEBUG http-bio-8080-exec-4 org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@da879c9]
+DEBUG http-bio-8080-exec-4 org.springframework.jdbc.datasource.DataSourceUtils - Returning JDBC Connection to DataSource
+DEBUG http-bio-8080-exec-4 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.RedirectView: name 'redirect:login.jsp'; URL [login.jsp]] in DispatcherServlet with name 'springMVCServlet'
+DEBUG http-bio-8080-exec-4 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+DEBUG http-bio-8080-exec-10 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'springMVCServlet' processing POST request for [/cd/login]
+DEBUG http-bio-8080-exec-10 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Looking up handler method for path /login
+DEBUG http-bio-8080-exec-10 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Returning handler method [public java.lang.String com.zhiyou.clouddisk.controller.AppUserController.login(com.zhiyou.clouddisk.model.AppUser,org.springframework.ui.Model)]
+DEBUG http-bio-8080-exec-10 org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'appUserController'
+DEBUG http-bio-8080-exec-10 org.springframework.web.cors.DefaultCorsProcessor - Skip CORS processing: request is from same origin
+DEBUG http-bio-8080-exec-10 org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+DEBUG http-bio-8080-exec-10 org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@27e3f6ba]
+DEBUG http-bio-8080-exec-10 org.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+DEBUG http-bio-8080-exec-10 org.springframework.jdbc.datasource.DataSourceUtils - Registering transaction synchronization for JDBC Connection
+DEBUG http-bio-8080-exec-10 org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [jdbc:mysql://192.168.99.100:3306/clouddisk, UserName=root@192.168.99.1, MySQL Connector Java] will be managed by Spring
+DEBUG http-bio-8080-exec-10 com.zhiyou.clouddisk.dao.AppUserDao.getAppUserByAccountNo - ==>  Preparing: select user_id ,user_name ,gender ,birthday ,account_no ,password ,email ,phone_no from app_user where account_no=? 
+DEBUG http-bio-8080-exec-10 com.zhiyou.clouddisk.dao.AppUserDao.getAppUserByAccountNo - ==> Parameters: test01(String)
+DEBUG http-bio-8080-exec-10 com.zhiyou.clouddisk.dao.AppUserDao.getAppUserByAccountNo - <==      Total: 0
+DEBUG http-bio-8080-exec-10 org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@27e3f6ba]
+DEBUG http-bio-8080-exec-10 org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@27e3f6ba]
+DEBUG http-bio-8080-exec-10 org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@27e3f6ba]
+DEBUG http-bio-8080-exec-10 org.springframework.jdbc.datasource.DataSourceUtils - Returning JDBC Connection to DataSource
+DEBUG http-bio-8080-exec-10 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.RedirectView: name 'redirect:login.jsp'; URL [login.jsp]] in DispatcherServlet with name 'springMVCServlet'
+DEBUG http-bio-8080-exec-10 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+DEBUG http-bio-8080-exec-12 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'springMVCServlet' processing GET request for [/cd/css/jumbotron-narrow.css]
+DEBUG http-bio-8080-exec-12 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Looking up handler method for path /css/jumbotron-narrow.css
+DEBUG http-bio-8080-exec-12 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Did not find handler method for [/css/jumbotron-narrow.css]
+DEBUG http-bio-8080-exec-12 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Matching patterns for request [/css/jumbotron-narrow.css] are [/css/**]
+DEBUG http-bio-8080-exec-12 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - URI Template variables for request [/css/jumbotron-narrow.css] are {}
+DEBUG http-bio-8080-exec-12 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapping [/css/jumbotron-narrow.css] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[ServletContext resource [/css/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@4ab5192]]] and 1 interceptor
+DEBUG http-bio-8080-exec-12 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/cd/css/jumbotron-narrow.css] is: -1
+DEBUG http-bio-8080-exec-12 org.springframework.web.servlet.DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'springMVCServlet': assuming HandlerAdapter completed request handling
+DEBUG http-bio-8080-exec-12 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+DEBUG http-bio-8080-exec-10 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'springMVCServlet' processing GET request for [/cd/css/jumbotron-narrow.css]
+DEBUG http-bio-8080-exec-10 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Looking up handler method for path /css/jumbotron-narrow.css
+DEBUG http-bio-8080-exec-10 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Did not find handler method for [/css/jumbotron-narrow.css]
+DEBUG http-bio-8080-exec-10 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Matching patterns for request [/css/jumbotron-narrow.css] are [/css/**]
+DEBUG http-bio-8080-exec-10 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - URI Template variables for request [/css/jumbotron-narrow.css] are {}
+DEBUG http-bio-8080-exec-10 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapping [/css/jumbotron-narrow.css] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[ServletContext resource [/css/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@4ab5192]]] and 1 interceptor
+DEBUG http-bio-8080-exec-10 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/cd/css/jumbotron-narrow.css] is: -1
+DEBUG http-bio-8080-exec-10 org.springframework.web.servlet.DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'springMVCServlet': assuming HandlerAdapter completed request handling
+DEBUG http-bio-8080-exec-10 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+DEBUG http-bio-8080-exec-8 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'springMVCServlet' processing GET request for [/cd/css/jumbotron-narrow.css]
+DEBUG http-bio-8080-exec-8 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Looking up handler method for path /css/jumbotron-narrow.css
+DEBUG http-bio-8080-exec-8 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Did not find handler method for [/css/jumbotron-narrow.css]
+DEBUG http-bio-8080-exec-8 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Matching patterns for request [/css/jumbotron-narrow.css] are [/css/**]
+DEBUG http-bio-8080-exec-8 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - URI Template variables for request [/css/jumbotron-narrow.css] are {}
+DEBUG http-bio-8080-exec-8 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapping [/css/jumbotron-narrow.css] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[ServletContext resource [/css/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@4ab5192]]] and 1 interceptor
+DEBUG http-bio-8080-exec-8 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/cd/css/jumbotron-narrow.css] is: -1
+DEBUG http-bio-8080-exec-8 org.springframework.web.servlet.DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'springMVCServlet': assuming HandlerAdapter completed request handling
+DEBUG http-bio-8080-exec-8 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+DEBUG http-bio-8080-exec-8 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'springMVCServlet' processing POST request for [/cd/regist]
+DEBUG http-bio-8080-exec-8 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Looking up handler method for path /regist
+DEBUG http-bio-8080-exec-8 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Returning handler method [public java.lang.String com.zhiyou.clouddisk.controller.AppUserController.regist(com.zhiyou.clouddisk.model.AppUser)]
+DEBUG http-bio-8080-exec-8 org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'appUserController'
+DEBUG http-bio-8080-exec-8 org.springframework.web.cors.DefaultCorsProcessor - Skip CORS processing: request is from same origin
+DEBUG http-bio-8080-exec-8 org.springframework.jdbc.datasource.DataSourceTransactionManager - Creating new transaction with name [com.zhiyou.clouddisk.service.imp.AppUserServiceImpl.saveAppUser]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+DEBUG http-bio-8080-exec-8 org.springframework.jdbc.datasource.DataSourceTransactionManager - Acquired Connection [jdbc:mysql://192.168.99.100:3306/clouddisk, UserName=root@192.168.99.1, MySQL Connector Java] for JDBC transaction
+DEBUG http-bio-8080-exec-8 org.springframework.jdbc.datasource.DataSourceTransactionManager - Switching JDBC Connection [jdbc:mysql://192.168.99.100:3306/clouddisk, UserName=root@192.168.99.1, MySQL Connector Java] to manual commit
+DEBUG http-bio-8080-exec-8 org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+DEBUG http-bio-8080-exec-8 org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6ce69f79]
+DEBUG http-bio-8080-exec-8 org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [jdbc:mysql://192.168.99.100:3306/clouddisk, UserName=root@192.168.99.1, MySQL Connector Java] will be managed by Spring
+DEBUG http-bio-8080-exec-8 com.zhiyou.clouddisk.dao.AppUserDao.add - ==>  Preparing: insert into app_user(user_name ,gender ,birthday ,account_no ,password ,email ,phone_no) values (?,?,?,?,?,?,?) 
+DEBUG http-bio-8080-exec-8 com.zhiyou.clouddisk.dao.AppUserDao.add - ==> Parameters: (String), m(String), null, 123(String), 123(String), (String), (String)
+DEBUG http-bio-8080-exec-8 com.zhiyou.clouddisk.dao.AppUserDao.add - <==    Updates: 1
+DEBUG http-bio-8080-exec-8 org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6ce69f79]
+DEBUG http-bio-8080-exec-8 org.springframework.jdbc.datasource.DataSourceTransactionManager - Participating in existing transaction
+DEBUG http-bio-8080-exec-8 org.mybatis.spring.SqlSessionUtils - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6ce69f79] from current transaction
+DEBUG http-bio-8080-exec-8 com.zhiyou.clouddisk.dao.FileIndexDao.addFileIndex - ==>  Preparing: insert into file_index(user_id,p_file_index_id,name,path,parent_id,is_file,create_time)values( ?,?,?,?,?,?,? ) 
+DEBUG http-bio-8080-exec-8 com.zhiyou.clouddisk.dao.FileIndexDao.addFileIndex - ==> Parameters: 140(Long), null, 根路径(String), /(String), null, 1(String), 2017-10-13 09:47:48.156(Timestamp)
+DEBUG http-bio-8080-exec-8 com.zhiyou.clouddisk.dao.FileIndexDao.addFileIndex - <==    Updates: 1
+DEBUG http-bio-8080-exec-8 org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6ce69f79]
+DEBUG http-bio-8080-exec-8 org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6ce69f79]
+DEBUG http-bio-8080-exec-8 org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6ce69f79]
+DEBUG http-bio-8080-exec-8 org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6ce69f79]
+DEBUG http-bio-8080-exec-8 org.springframework.jdbc.datasource.DataSourceTransactionManager - Initiating transaction commit
+DEBUG http-bio-8080-exec-8 org.springframework.jdbc.datasource.DataSourceTransactionManager - Committing JDBC transaction on Connection [jdbc:mysql://192.168.99.100:3306/clouddisk, UserName=root@192.168.99.1, MySQL Connector Java]
+DEBUG http-bio-8080-exec-8 org.springframework.jdbc.datasource.DataSourceTransactionManager - Releasing JDBC Connection [jdbc:mysql://192.168.99.100:3306/clouddisk, UserName=root@192.168.99.1, MySQL Connector Java] after transaction
+DEBUG http-bio-8080-exec-8 org.springframework.jdbc.datasource.DataSourceUtils - Returning JDBC Connection to DataSource
+DEBUG http-bio-8080-exec-8 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.RedirectView: name 'redirect:login.jsp'; URL [login.jsp]] in DispatcherServlet with name 'springMVCServlet'
+DEBUG http-bio-8080-exec-8 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+DEBUG http-bio-8080-exec-8 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'springMVCServlet' processing POST request for [/cd/login]
+DEBUG http-bio-8080-exec-8 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Looking up handler method for path /login
+DEBUG http-bio-8080-exec-8 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Returning handler method [public java.lang.String com.zhiyou.clouddisk.controller.AppUserController.login(com.zhiyou.clouddisk.model.AppUser,org.springframework.ui.Model)]
+DEBUG http-bio-8080-exec-8 org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'appUserController'
+DEBUG http-bio-8080-exec-8 org.springframework.web.cors.DefaultCorsProcessor - Skip CORS processing: request is from same origin
+DEBUG http-bio-8080-exec-8 org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+DEBUG http-bio-8080-exec-8 org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@838db69]
+DEBUG http-bio-8080-exec-8 org.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+DEBUG http-bio-8080-exec-8 org.springframework.jdbc.datasource.DataSourceUtils - Registering transaction synchronization for JDBC Connection
+DEBUG http-bio-8080-exec-8 org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [jdbc:mysql://192.168.99.100:3306/clouddisk, UserName=root@192.168.99.1, MySQL Connector Java] will be managed by Spring
+DEBUG http-bio-8080-exec-8 com.zhiyou.clouddisk.dao.AppUserDao.getAppUserByAccountNo - ==>  Preparing: select user_id ,user_name ,gender ,birthday ,account_no ,password ,email ,phone_no from app_user where account_no=? 
+DEBUG http-bio-8080-exec-8 com.zhiyou.clouddisk.dao.AppUserDao.getAppUserByAccountNo - ==> Parameters: 123(String)
+DEBUG http-bio-8080-exec-8 com.zhiyou.clouddisk.dao.AppUserDao.getAppUserByAccountNo - <==      Total: 6
+DEBUG http-bio-8080-exec-8 org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@838db69]
+DEBUG http-bio-8080-exec-8 org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@838db69]
+DEBUG http-bio-8080-exec-8 org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@838db69]
+DEBUG http-bio-8080-exec-8 org.springframework.jdbc.datasource.DataSourceUtils - Returning JDBC Connection to DataSource
+DEBUG http-bio-8080-exec-8 org.springframework.jdbc.datasource.DataSourceTransactionManager - Should roll back transaction but cannot - no transaction available
+DEBUG http-bio-8080-exec-8 org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolving exception from handler [public java.lang.String com.zhiyou.clouddisk.controller.AppUserController.login(com.zhiyou.clouddisk.model.AppUser,org.springframework.ui.Model)]: org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 6
+DEBUG http-bio-8080-exec-8 org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver - Resolving exception from handler [public java.lang.String com.zhiyou.clouddisk.controller.AppUserController.login(com.zhiyou.clouddisk.model.AppUser,org.springframework.ui.Model)]: org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 6
+DEBUG http-bio-8080-exec-8 org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver - Resolving exception from handler [public java.lang.String com.zhiyou.clouddisk.controller.AppUserController.login(com.zhiyou.clouddisk.model.AppUser,org.springframework.ui.Model)]: org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 6
+DEBUG http-bio-8080-exec-8 org.springframework.web.servlet.DispatcherServlet - Could not complete request
+org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 6
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:77)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:446)
+	at com.sun.proxy.$Proxy33.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:166)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:82)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53)
+	at com.sun.proxy.$Proxy34.getAppUserByAccountNo(Unknown Source)
+	at com.zhiyou.clouddisk.service.imp.AppUserServiceImpl.login(AppUserServiceImpl.java:48)
+	at sun.reflect.GeneratedMethodAccessor77.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:282)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213)
+	at com.sun.proxy.$Proxy39.login(Unknown Source)
+	at com.zhiyou.clouddisk.controller.AppUserController.login(AppUserController.java:37)
+	at sun.reflect.GeneratedMethodAccessor76.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:116)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 6
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:81)
+	at sun.reflect.GeneratedMethodAccessor69.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	... 60 more
+DEBUG http-bio-8080-exec-10 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'springMVCServlet' processing POST request for [/cd/login]
+DEBUG http-bio-8080-exec-10 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Looking up handler method for path /login
+DEBUG http-bio-8080-exec-10 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Returning handler method [public java.lang.String com.zhiyou.clouddisk.controller.AppUserController.login(com.zhiyou.clouddisk.model.AppUser,org.springframework.ui.Model)]
+DEBUG http-bio-8080-exec-10 org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'appUserController'
+DEBUG http-bio-8080-exec-10 org.springframework.web.cors.DefaultCorsProcessor - Skip CORS processing: request is from same origin
+DEBUG http-bio-8080-exec-10 org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+DEBUG http-bio-8080-exec-10 org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7b56591]
+DEBUG http-bio-8080-exec-10 org.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+DEBUG http-bio-8080-exec-10 org.springframework.jdbc.datasource.DataSourceUtils - Registering transaction synchronization for JDBC Connection
+DEBUG http-bio-8080-exec-10 org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [jdbc:mysql://192.168.99.100:3306/clouddisk, UserName=root@192.168.99.1, MySQL Connector Java] will be managed by Spring
+DEBUG http-bio-8080-exec-10 com.zhiyou.clouddisk.dao.AppUserDao.getAppUserByAccountNo - ==>  Preparing: select user_id ,user_name ,gender ,birthday ,account_no ,password ,email ,phone_no from app_user where account_no=? 
+DEBUG http-bio-8080-exec-10 com.zhiyou.clouddisk.dao.AppUserDao.getAppUserByAccountNo - ==> Parameters: 0001(String)
+DEBUG http-bio-8080-exec-10 com.zhiyou.clouddisk.dao.AppUserDao.getAppUserByAccountNo - <==      Total: 0
+DEBUG http-bio-8080-exec-10 org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7b56591]
+DEBUG http-bio-8080-exec-10 org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7b56591]
+DEBUG http-bio-8080-exec-10 org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7b56591]
+DEBUG http-bio-8080-exec-10 org.springframework.jdbc.datasource.DataSourceUtils - Returning JDBC Connection to DataSource
+DEBUG http-bio-8080-exec-10 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.RedirectView: name 'redirect:login.jsp'; URL [login.jsp]] in DispatcherServlet with name 'springMVCServlet'
+DEBUG http-bio-8080-exec-10 org.springframework.web.servlet.DispatcherServlet - Successfully completed request

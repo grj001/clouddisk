@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhiyou.clouddisk.dao.AppUserDao">
+	<resultMap id="appUserResultMap" type="com.zhiyou.clouddisk.model.AppUser">
+	  <id property="userId" column="user_id" />
+	  <result property="userName" column="user_name"/>
+	  <result property="accountNo" column="account_no"/>
+	  <result property="phoneNo" column="phone_no"/>
+	</resultMap>
+	
+	<select id="getAppUsers" resultMap="appUserResultMap">
+		select user_id
+			   ,user_name
+			   ,gender
+			   ,birthday
+			   ,account_no
+			   ,password
+			   ,email
+			   ,phone_no
+		from app_user
+	</select>
+	<update id="update">
+	    update app_user
+		set user_name=#{userName}
+		   ,gender=#{gender}
+		   ,birthday=#{birthday}
+		   ,account_no=#{accountNo}
+		   ,password=#{password}
+		   ,email=#{email}
+		   ,phone_no=#{phoneNo}
+		where user_id=#{userId}
+	</update>
+	<insert id="add" useGeneratedKeys="true" keyProperty="userId" parameterType="com.zhiyou.clouddisk.model.AppUser">
+		insert into app_user(user_name
+			   ,gender
+			   ,birthday
+			   ,account_no
+			   ,password
+			   ,email
+			   ,phone_no) values
+	    (#{userName},#{gender},#{birthday},#{accountNo},#{password},#{email},#{phoneNo})
+	</insert>
+	<select id="getAppUserByAccountNo" resultMap="appUserResultMap" >
+		select user_id
+			   ,user_name
+			   ,gender
+			   ,birthday
+			   ,account_no
+			   ,password
+			   ,email
+			   ,phone_no
+		from app_user
+		where account_no=#{accountNo}
+	</select>
+</mapper>

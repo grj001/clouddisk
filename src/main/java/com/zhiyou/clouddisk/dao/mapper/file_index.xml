@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhiyou.clouddisk.dao.FileIndexDao">
+	<resultMap type="com.zhiyou.clouddisk.model.FileIndex" id="FileIndex">
+		<id property="fileIndexId" column="file_index_id"/>
+		<result property="userId" column="user_id"/>
+		<result property="pFileIndexId" column="p_file_index_id"/>
+		<result property="name" column="name"/>
+		<result property="path" column="path"/>
+		<result property="parentId" column="parent_id"/>
+		<result property="isFile" column="is_file"/>
+		<result property="createTime" column="create_time"/>
+		<result property="deleteFlag" column="delete_flag"/>
+	</resultMap>
+	<insert id="addFileIndex" useGeneratedKeys="true" keyProperty="fileIndexId" parameterType="com.zhiyou.clouddisk.model.FileIndex">
+		insert into file_index(user_id,p_file_index_id,name,path,parent_id,is_file,create_time)values(
+		 #{userId},#{pFileIndexId},#{name},#{path},#{parentId},#{isFile},#{createTime}
+		)
+	</insert>
+	<select id="getRootFilesByUserId" resultMap="FileIndex">
+		SELECT a.*
+		FROM file_index a
+		INNER JOIN file_index b
+		ON a.parent_id=b.file_index_id
+		WHERE b.user_id=#{userId} AND b.path='/'
+	</select>
+	<select id="getRootDirByUserId" resultMap="FileIndex">
+		select * from file_index where user_id=#{userId} AND path='/'
+	</select>
+	<select id="getFileIndexById" resultMap="FileIndex">
+		select * from file_index where file_index_id=#{fiId}
+	</select>
+	<select id="getChildrenFileById" resultMap="FileIndex">
+		select * from file_index where parent_id=#{fiId} and delete_flag is null
+	</select>
+	<select id="getFileIndexByPath" resultMap="FileIndex">
+		select * from file_index where user_id=#{userId} AND path=#{path}
+	</select>
+	<select id="getFileIndexBypId" resultMap="FileIndex">
+		select * from file_index where user_id=#{userId} AND p_file_index_id=#{pFileIndexId}
+	</select>
+	<update id="updateFile">
+		update file_index
+		set p_file_index_id=#{pFileIndexId}
+		    ,name=#{name}
+		    ,path=#{path}
+		    ,parent_id=#{parentId}
+		    ,is_file=#{isFile}
+		    ,create_time=#{createTime}
+		    ,user_id=#{userId}
+		    ,delete_flag=#{deleteFlag}
+		where file_index_id=#{fileIndexId}
+	</update>
+	<select id="getSubFiles" resultMap="FileIndex">
+		select * from file_index where path like concat(#{path},'/%') and user_id=#{userId}
+	</select>
+	<select id="getOptionTranPath" resultType="map">
+		SELECT a.file_index_id
+       		   ,a.path
+		FROM file_index a
+		LEFT JOIN (
+		     SELECT user_id,path FROM file_index WHERE file_index_id=#{fileIndexId}
+		)b
+		ON a.user_id=b.user_id
+		WHERE a.path NOT LIKE CONCAT(b.path,'%') AND a.is_file='1' AND a.delete_flag IS NULL
+	</select>
+	<select id="searchFile" resultMap="FileIndex">
+		select * from file_index where name like concat('%',#{keyWord},'%')
+	</select>
+	<select id="getStaticNums" resultType="map">
+		SELECT user_id
+		       ,SUM(CASE WHEN NAME LIKE '%.jpg' OR NAME LIKE '%.png' OR NAME LIKE '%.gif' THEN 1 ELSE 0 END) pic_number
+		       ,SUM(CASE WHEN NAME LIKE '%.mp4' OR NAME LIKE '%.avi' OR NAME LIKE '%.kvm' THEN 1 ELSE 0 END) video_number
+		       ,SUM(CASE WHEN NAME LIKE '%.doc' OR NAME LIKE '%.xls' OR NAME LIKE '%.ppt' THEN 1 ELSE 0 END) doc_number
+		       ,SUM(CASE WHEN NAME LIKE '%.java' OR NAME LIKE '%.php' OR NAME LIKE '%.html' THEN 1 ELSE 0 END) code_number
+		       ,COUNT(1)-SUM(CASE WHEN NAME LIKE '%.jpg' OR NAME LIKE '%.png' OR NAME LIKE '%.gif' THEN 1 ELSE 0 END)
+		                -SUM(CASE WHEN NAME LIKE '%.mp4' OR NAME LIKE '%.avi' OR NAME LIKE '%.kvm' THEN 1 ELSE 0 END)
+		                -SUM(CASE WHEN NAME LIKE '%.doc' OR NAME LIKE '%.xls' OR NAME LIKE '%.ppt' THEN 1 ELSE 0 END)
+		                -SUM(CASE WHEN NAME LIKE '%.java' OR NAME LIKE '%.php' OR NAME LIKE '%.html' THEN 1 ELSE 0 END) other_number
+		FROM file_index
+		WHERE is_file='0' 
+		AND delete_flag IS NULL
+		AND user_id=#{userId}
+		GROUP BY user_id
+	</select>
+</mapper>
